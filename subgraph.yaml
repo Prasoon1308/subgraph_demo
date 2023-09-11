@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: demo
+    network: goerli
+    source:
+      address: "0xB0049F7e339e9DCa2f81cE3c4341dd41770b5BAC"
+      abi: demo
+      startBlock: 9674131
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - value
+      abis:
+        - name: demo
+          file: ./abis/demo.json
+      eventHandlers:
+        - event: value(uint256)
+          handler: handlevalue
+      file: ./src/demo.ts
