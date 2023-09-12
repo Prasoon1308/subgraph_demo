@@ -1,0 +1,67 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_a",
+        "type": "uint256"
+      }
+    ],
+    "name": "demoFunc",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_b",
+        "type": "uint256"
+      }
+    ],
+    "name": "demoFunctwo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "one",
+        "type": "uint256"
+      }
+    ],
+    "name": "value",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "two",
+        "type": "uint256"
+      }
+    ],
+    "name": "valuetwo",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getA",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

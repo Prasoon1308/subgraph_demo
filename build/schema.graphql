@@ -1,0 +1,14 @@
+type value @entity(immutable: true) {
+  id: Bytes!
+  one: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type valuetwo @entity(immutable: true) {
+  id: Bytes!
+  two: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
