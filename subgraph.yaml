@@ -6,19 +6,22 @@ dataSources:
     name: demo
     network: goerli
     source:
-      address: "0xB0049F7e339e9DCa2f81cE3c4341dd41770b5BAC"
+      address: "0x6F9bf6804eeB5433aEB7C33EF97448113dF4754b"
       abi: demo
-      startBlock: 9674131
+      startBlock: 9674720
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - value
+        - valuetwo
       abis:
         - name: demo
           file: ./abis/demo.json
       eventHandlers:
         - event: value(uint256)
           handler: handlevalue
+        - event: valuetwo(uint256)
+          handler: handlevaluetwo
       file: ./src/demo.ts
